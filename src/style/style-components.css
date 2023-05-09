@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    body {
+        @apply h-full font-poppins
+    }
+
+    .flex-full-center{
+        @apply flex justify-center items-center
+    }
+    .flex-v-center{
+        @apply flex items-center
+    }
+
+    @import url('../components/Appbar/navbar.module.css');
+    @import url('../app/(home)/(shared)/style.css');
+}
+
+@layer utilities {
+    .container{
+        @apply px-5 mx-auto
+    }
+}

@@ -1,0 +1,17 @@
+footer{
+    @apply grid grid-cols-2 lg:grid-cols-5 py-10 gap-5 items-center justify-center
+}
+
+footer h5 {
+    @apply font-bold text-lg capitalize my-2 md:my-5
+}
+footer p {
+    @apply capitalize my-2 lg:my-5
+}
+
+footer ul li {
+    @apply text-zinc-500 my-3
+}
+.footer-icon{
+    @apply text-pink-500 cursor-pointer rounded-full p-3 hover:bg-pink-500 hover:scale-105 duration-150 ease-linear hover:text-white
+}

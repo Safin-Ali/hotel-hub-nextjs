@@ -7,13 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      color: {
-        'base':{
-          'sweet': '#FFF5F5',
-          'soft-jambul': '#F4F1FE',
-          'bg': '#FBFBFF',
-          'purple': '#6347F9',
-        }
+      fontFamily:{
+        'poppins': ['Poppins','sans-serif']
+      },
+      colors: {
       },
     },
   },
