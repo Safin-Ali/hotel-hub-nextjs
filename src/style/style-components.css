@@ -4,7 +4,7 @@
 
 @layer components {
     body {
-        @apply h-full font-poppins
+        @apply h-full
     }
 
     .flex-full-center{
@@ -20,6 +20,6 @@
 
 @layer utilities {
     .container{
-        @apply px-5 mx-auto
+        @apply px-2 sm:px-2.5 md:px-5 mx-auto
     }
 }

@@ -1,7 +1,11 @@
 import '../style/globals.css'
-import { Inter } from 'next/font/google'
+import { Inter, Roboto } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({
+  weight: ['400', '700'],
+  style: ['normal'],
+  subsets: ['latin']
+})
 
 export const metadata = {
   title: 'Hotel Hub',
@@ -15,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`relative`}>{children}</body>
+      <body className={`relative ${roboto.className}`}>{children}</body>
     </html>
   )
 }
