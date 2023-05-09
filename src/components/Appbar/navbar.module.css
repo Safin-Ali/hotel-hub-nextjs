@@ -1,0 +1,15 @@
+.nav-container{
+    @apply flex items-center justify-between my-4 relative
+}
+
+.nav-item-container{
+    @apply flex items-center rounded-lg md:border-none border min-w-[200px] flex-col md:flex-row justify-center md:gap-5
+}
+
+.nav-item{
+    @apply text-white py-2 md:py-0 hover:text-pink-500 relative md:before:content-[''] md:before:-bottom-2 md:before:scale-x-0 hover:md:before:scale-x-100 border-b last:border-none md:border-none w-full text-center md:before:transition-transform md:before:duration-300 md:before:origin-bottom-left md:before:w-full md:before:h-1 md:before:bg-pink-500 md:before:absolute md:before:inset-x-0
+}
+
+.nav-res{
+    @apply absolute md:static md:inset-0 z-[1000] top-14 right-0 duration-200 transition-all
+}
