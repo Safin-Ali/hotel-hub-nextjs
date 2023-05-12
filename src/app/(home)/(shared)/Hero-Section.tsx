@@ -24,8 +24,8 @@ export default function HeroSection() {
       modules={ [EffectFade, Autoplay, Navigation] }
     >
       {
-        headerSlideData.map(slide => (
-          <SwiperSlide>
+        headerSlideData.map((slide,idx) => (
+          <SwiperSlide key={idx}>
             <div
               style={
                 {

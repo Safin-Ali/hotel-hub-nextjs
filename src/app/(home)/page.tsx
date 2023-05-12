@@ -2,15 +2,17 @@ import Navbar from '@/components/Appbar/Navbar';
 import React from 'react';
 import HeroSection from './(shared)/Hero-Section';
 import AboutSection from './(shared)/About-Section';
-interface PropsType {}
+import CheckoutSection from './(shared)/Checkout-Section';
+interface PropsType { }
 
-export default function page () {
+export default function page() {
 
- return (
+  return (
     <>
-        <Navbar/>
-        <HeroSection/>
-        <AboutSection/>
+      <Navbar />
+        <HeroSection />
+        <CheckoutSection />
+        <AboutSection />
     </>
   );
 };

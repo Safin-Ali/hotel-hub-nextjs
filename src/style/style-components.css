@@ -15,6 +15,8 @@
     }
 
     @import url('../components/Appbar/navbar.module.css');
+    @import url('../components/Modal/modal-template.module.css');
+    @import url('../components/ListBox/list-box-template.module.css');
     @import url('../app/(home)/(shared)/style.css');
 }
 

@@ -1,5 +1,5 @@
 const navItems = [
-    { name: 'Rooms', link: '/rooms' },
+    { name: 'Hotels', link: '/hotels' },
     { name: 'Services', link: '/services' },
     { name: 'Blog', link: '/blog' },
     { name: 'Contact', link: '/contact' },

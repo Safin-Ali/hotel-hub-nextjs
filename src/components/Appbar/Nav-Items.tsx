@@ -19,9 +19,8 @@ export default function NavbarItems() {
 
                 <ul className={ navstyle['nav-item-container'] }>
                     {
-                        navItems.map((route, idx) => <>
-                            <li key={ idx } className={ navstyle['nav-item'] }><Link href={ route.link }>{ route.name }</Link></li>
-                        </>)
+                        navItems.map((route, idx) =>
+                            <li key={ idx } className={ navstyle['nav-item'] }><Link href={ route.link }>{ route.name }</Link></li>)
                     }
                 </ul>
 
