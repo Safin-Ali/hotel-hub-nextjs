@@ -1,0 +1,10 @@
+.list-options-container{
+    @apply absolute mt-1 w-full overflow-auto rounded-md bg-white text-center text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm left-0
+}
+
+.list-item{
+    @apply relative capitalize select-none border-b last:border-0 cursor-pointer  py-2
+}
+.list-item-active{
+    @apply bg-pink-500 bg-opacity-20 border-pink-500/40 text-pink-700 duration-150 transition-all
+}
