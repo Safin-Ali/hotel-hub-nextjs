@@ -1,0 +1,11 @@
+.modal-blur-bg{
+    @apply fixed inset-0 bg-black bg-opacity-50;
+}
+
+.modal-elm-container{
+    @apply flex min-h-full relative items-center justify-center p-4 text-center;
+}
+
+.modal-panel{
+    @apply w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all
+}
