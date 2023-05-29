@@ -4,24 +4,40 @@
 
 @layer components {
     body {
-        @apply h-full
+        @apply h-full text-gray-900 bg-white-300
     }
 
-    .flex-full-center{
+    .flex-full-center {
         @apply flex justify-center items-center
     }
-    .flex-v-center{
+
+    .flex-v-center {
         @apply flex items-center
+    }
+
+    .skeleton-tone {
+        @apply animate-pulse bg-gray-200;
+    }
+
+    .fit-screen{
+        @apply h-[calc(100vh-74px)];
     }
 
     @import url('../components/Appbar/navbar.module.css');
     @import url('../components/Modal/modal-template.module.css');
+    @import url('../components/Card/card-style.css');
+    @import url('../components/Skeleton/skeleton-style.css');
     @import url('../components/ListBox/list-box-template.module.css');
     @import url('../app/(home)/(shared)/style.css');
+    @import url('../app/hotels/style.module.css');
 }
 
 @layer utilities {
-    .container{
+    .container {
         @apply px-2 sm:px-2.5 md:px-5 mx-auto
+    }
+
+    .hide-scrollbar::-webkit-scrollbar {
+        @apply hidden
     }
 }

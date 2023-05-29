@@ -1,5 +1,5 @@
 .list-options-container{
-    @apply absolute mt-1 w-full overflow-auto rounded-md bg-white text-center text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm left-0
+    @apply absolute mt-1 w-full overflow-auto rounded-md bg-white-50 text-center text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm left-0
 }
 
 .list-item{

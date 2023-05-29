@@ -6,8 +6,14 @@ import navItems from '@/data/navbar-item';
 import { HiBars3 } from 'react-icons/hi2';
 import PrimaryButton from '../Button/Primary-Button';
 
+export type NavItemPropsType = {
+    color: string
+};
 
-export default function NavbarItems() {
+
+export default function NavbarItems({
+    color
+}: NavItemPropsType) {
 
     const [expandNav, setNavExpand] = useState<boolean>(false);
 
@@ -20,7 +26,14 @@ export default function NavbarItems() {
                 <ul className={ navstyle['nav-item-container'] }>
                     {
                         navItems.map((route, idx) =>
-                            <li key={ idx } className={ navstyle['nav-item'] }><Link href={ route.link }>{ route.name }</Link></li>)
+                            <li key={ idx } className={ `${navstyle['nav-item']} ${color}` }>
+                                <Link
+                                    href={ route.link }
+                                    >
+                                    { route.name }
+
+                                </Link>
+                            </li>)
                     }
                 </ul>
 
@@ -30,13 +43,13 @@ export default function NavbarItems() {
 
                 {/* authenticate button */ }
 
-                <div className={ `text-white gap-5` }>
-                    <PrimaryButton padding={`px-2 py-1 md:px-5 md:py-2`} children={ 'Book Now' } />
+                <div className={ `${color} gap-5` }>
+                    <PrimaryButton padding={ `px-2 py-1 md:px-5 md:py-2` } children={ 'Book Now' } />
                 </div>
 
                 {/* expand bar icon */ }
 
-                <div onClick={() => setNavExpand(!expandNav)} className={ `cursor-pointer md:hidden` }>
+                <div onClick={ () => setNavExpand(!expandNav) } className={ `cursor-pointer md:hidden` }>
                     <HiBars3 size={ 35 } color={ `${expandNav ? '#ec4899' : '#f1f2f3'}` } />
                 </div>
             </div>

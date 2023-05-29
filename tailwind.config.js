@@ -11,7 +11,16 @@ module.exports = {
         'poppins': ['Poppins','sans-serif']
       },
       colors: {
+        'white': {
+          '50': '#FFFFFF',
+          '100': '#F8FBFF',
+          '200': '#FDFEFF',
+          '300': '#f5f6fa',
+        },
       },
+      boxShadow: {
+          'card': `0px 0px 50px -20px rgba(0, 0, 0, 0.2)`,
+      }
     },
   },
   plugins: [],

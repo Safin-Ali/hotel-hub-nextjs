@@ -1,5 +1,5 @@
 .nav-container{
-    @apply flex items-center justify-between my-4 relative
+    @apply flex items-center w-full container justify-between relative
 }
 
 .nav-item-container{
@@ -7,7 +7,7 @@
 }
 
 .nav-item{
-    @apply text-white py-2 md:py-0 hover:text-pink-500 relative md:before:content-[''] md:before:-bottom-2 md:before:scale-x-0 hover:md:before:scale-x-100 border-b last:border-none md:border-none w-full text-center md:before:transition-transform md:before:duration-300 md:before:origin-bottom-left md:before:w-full md:before:h-1 md:before:bg-pink-500 md:before:absolute md:before:inset-x-0
+    @apply py-2 md:py-0 hover:text-pink-500 relative md:before:content-[''] md:before:-bottom-2 md:before:scale-x-0 hover:md:before:scale-x-100 border-b last:border-none md:border-none w-full text-center md:before:transition-transform md:before:duration-300 md:before:origin-bottom-left md:before:w-full md:before:h-1 md:before:bg-pink-500 md:before:absolute md:before:inset-x-0
 }
 
 .nav-res{

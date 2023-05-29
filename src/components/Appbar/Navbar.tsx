@@ -3,21 +3,38 @@ import navstyle from './navbar.module.css';
 import Link from 'next/link';
 import NavbarItems from './Nav-Items';
 
+export interface PropsType {
+    position: `sticky` | 'absolute' | 'fixed',
+    className: string,
+    color: string,
+    logoColor: `invert` | ''
+};
 
-export default function Navbar() {
+
+export default function Navbar({
+    className,
+    color,
+    position,
+    logoColor
+}: PropsType) {
 
     return (
-        <header className={ `container absolute top-0 inset-x-0 z-[3]` }>
-            <nav className={ navstyle['nav-container'] }>
+        <header className={ `${className} ${position} w-full top-0 h-[74px] inset-x-0 z-[5]` }>
+            <nav className={ `container` }>
 
-                {/* Brand logo */ }
-                <div className={ `w-[150px] invert` }>
-                    <Link href={ `/` } > <img className={ `w-full` } src="https://svgshare.com/i/svM.svg" alt="Brand-Logo" /> </Link>
-                </div>
+                <section className={ navstyle['nav-container'] }>
 
-                {/* nav container */}
+                    {/* Brand logo */ }
+                    <div className={ `w-[150px] ${logoColor}` }>
+                        <Link href={ `/` } > <img className={ `w-full` } src="https://svgshare.com/i/svM.svg" alt="Brand-Logo" /> </Link>
+                    </div>
 
-                <NavbarItems/>
+                    {/* nav container */ }
+                    <NavbarItems color={ color } />
+
+                </section>
+
+
 
             </nav>
         </header>

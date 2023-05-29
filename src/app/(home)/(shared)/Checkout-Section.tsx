@@ -36,7 +36,7 @@ export default function CheckoutSection() {
         <>
             <section className={ `sm:block hidden h-[120px] relative` }>
 
-                <div className={ `shadow-lg absolute -top-[50%] rounded-lg z-[101] left-1/2 transform -translate-x-1/2 bg-white py-7 w-[95%] lg:w-[80%]` }>
+                <div className={ `shadow-lg absolute -top-[50%] rounded-lg z-[101] left-1/2 transform -translate-x-1/2 bg-white-50 py-7 w-[95%] lg:w-[80%]` }>
 
                     <div className={ `grid sm:grid-cols-2 gap-y-5 md:grid-cols-4 justify-center items-center` }>
 

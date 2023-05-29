@@ -1,10 +1,11 @@
 import '../style/globals.css'
-import { Inter, Roboto } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 
 const roboto = Roboto({
   weight: ['400', '700'],
   style: ['normal'],
-  subsets: ['latin']
+  subsets: ['latin'],
+  fallback:['system-ui', 'arial']
 })
 
 export const metadata = {

@@ -1,3 +1,3 @@
 .pmr-btn {
-    @apply border-2 text-inherit rounded-md text-center border-pink-500 inline-block z-[1] relative duration-300 ease-linear before:duration-300 before:ease-linear before:absolute before:inset-y-0 before:left-1/2 before:right-1/2 before:opacity-0 before:content-[''] before:bg-pink-500 before:z-[-1] active:scale-90 overflow-hidden hover:text-white hover:before:left-0 hover:before:right-0 hover:before:opacity-100
+    @apply border-2 text-inherit rounded-md text-center border-pink-500 inline-block z-[1] relative duration-300 ease-linear before:duration-300 before:ease-linear before:absolute before:inset-y-0 before:left-1/2 before:right-1/2 before:opacity-0 before:content-[''] before:bg-pink-500 before:z-[-1] active:scale-90 overflow-hidden hover:text-white-50 hover:before:left-0 hover:before:right-0 hover:before:opacity-100
   }
