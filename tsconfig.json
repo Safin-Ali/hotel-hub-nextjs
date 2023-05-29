@@ -23,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/font/fonts-nextjs.js", "../use-event-handlers.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/font/fonts-nextjs.js", "../use-event-handlers.ts", "src/utilities/fetch-data.ts"],
   "exclude": ["node_modules"]
 }

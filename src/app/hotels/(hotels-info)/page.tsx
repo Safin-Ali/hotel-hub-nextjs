@@ -1,25 +1,13 @@
 import React from 'react';
 import styleHotel from './style.module.css';
 import CheckOut from './Check-Out';
-import HotelsSliders from './(Hotels-Data)/Hotels-Sliders';
-
-async function getHotels() {
-  const res = await fetch(`https://hotel-hub-server.vercel.app/hotels`,{
-    cache:`no-cache`
-  });
-
-  if (!res.ok) {
-
-    throw new Error('Failed to fetch data');
-  }
-
-  return res.json();
-  ;
-};
+import HotelsSliders from './Hotels-Sliders';
+import API from '@/utilities/fetch-data';
+import { HotelsDataType } from '@/types/Hotel-Data-Type';
 
 export default async function Page() {
 
-  const hotelsData = await getHotels();
+  const hotelsData = await API.get<HotelsDataType[]>(`/hotels`,'no-cache');
 
   return (
     <>
