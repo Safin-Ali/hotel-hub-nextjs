@@ -1,0 +1,6 @@
+.hotel-section{
+    @apply flex items-center gap-10 h-[calc(100vh-74px)] overflow-hidden
+}
+.hotel-card-section{
+    @apply grid grid-cols-3 justify-center items-center gap-5;
+}
