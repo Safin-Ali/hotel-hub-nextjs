@@ -1,0 +1,35 @@
+.hotel-name{
+    @apply absolute -top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white-50 text-center bg-black w-full h-full bg-opacity-60 font-semibold transition-all duration-[500ms] ease-out;
+}
+
+.hotel-card-features{
+    @apply p-1.5 rounded-full text-white-50;
+}
+
+.hotel-card-fig{
+    @apply shadow-card bg-white-50 rounded-md h-80;
+}
+
+.hotel-card-features-section{
+    @apply flex items-center gap-2 mt-2;
+}
+
+.hotel-location{
+    @apply font-medium
+}
+
+.hotel-overlay{
+    @apply flex-col gap-y-3 h-full cursor-pointer;
+}
+
+.hotel-card-country{
+    @apply my-2 flex items-center gap-1 capitalize;
+}
+
+.hotel-card-country-logo{
+    @apply w-[20px] block h-[20px] bg-cover rounded-full
+}
+
+.hotel-card-rating{
+    @apply flex items-center text-amber-500;
+}

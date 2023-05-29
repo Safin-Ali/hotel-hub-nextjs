@@ -1,0 +1,3 @@
+.hotel-card-skleton{
+    @apply w-full h-80 bg-white-50 rounded-lg;
+}
